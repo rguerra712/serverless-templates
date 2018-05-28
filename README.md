@@ -2,7 +2,7 @@
 A list of servless templates for use with visual studio code.
 
 # Example usage
-If you have not done so, you will need to install [serverless](https://github.com/serverless/serverless#readme) and setup your [provider credentials](https://github.com/serverless/serverless#readme).
+If you have not done so, you will need to install [serverless](https://github.com/serverless/serverless#readme) and setup your [provider credentials](https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/credentials.md).
 
 Once you have done the above:
 1. Create your repository in github and clone it locally
