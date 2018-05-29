@@ -67,3 +67,4 @@ js/ts.js
 lib/*.map
 lib/ts.js
 /**/*.js
+/out

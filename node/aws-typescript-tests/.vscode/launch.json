@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/handler.js",
+            "program": "${workspaceFolder}/out/handler.js",
             "preLaunchTask": "npm: build",
             "outFiles": [
 				"${workspaceRoot}/out/**/*.js"
@@ -25,7 +25,7 @@
                 "--timeout",
                 "999999",
                 "--colors",
-                "${workspaceFolder}/test"
+                "${workspaceFolder}/out/test"
             ],
             "internalConsoleOptions": "openOnSessionStart",
             "preLaunchTask": "npm: build",
