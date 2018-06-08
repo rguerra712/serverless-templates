@@ -11,9 +11,10 @@ Once you have done the above:
 cd <project-name>
 serverless create --template-url https://github.com/rguerra712/serverless-templates/tree/master/node/aws-typescript-tests
 ```
-1. Move the template from the subdirectory to the project path, e.g.
+1. Move the template from the subdirectory to the project path (including hidden files), e.g.
 ```
 mv --target-directory=. aws-typescript-tests/*
+mv --target-directory=. aws-typescript-tests/.[!.]*
 rm -rf aws-typescript-tests/
 ```
 
