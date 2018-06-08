@@ -8,7 +8,7 @@ Once you have done the above:
 1. Create your repository in github and clone it locally
 1. Navigate to your cloned repository and add the desired serverless template, e.g.
 ```
-serverless create --template-url https://github.com/rguerra712/serverless-templates/node/aws-typescript-tests
+serverless create --template-url https://github.com/rguerra712/serverless-templates/tree/master/node/aws-typescript-tests
 ```
 
 Once you have created your template be sure to **change the service name from `hello` and update these changes in the `serverless.yml` configuration file**. Additionally, you will need to **change the `service` property** to a more appropriate name.
