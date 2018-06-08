@@ -5,10 +5,10 @@ A list of servless templates for use with visual studio code.
 If you have not done so, you will need to install [serverless](https://github.com/serverless/serverless#readme) and setup your [provider credentials](https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/credentials.md).
 
 Once you have done the above:
-1. Create your repository in github and clone it locally
-1. Navigate to your cloned repository and add the desired serverless template, e.g.
+1. Create your repository in github and clone it locally (do not yet navigate into the folder)
+1. Navigate to your cloned repository and add the desired serverless template (replace `project-name` with your project name in the script below, e.g.
 ```
-serverless create --template-url https://github.com/rguerra712/serverless-templates/tree/master/node/aws-typescript-tests
+serverless create --template-url https://github.com/rguerra712/serverless-templates/tree/master/node/aws-typescript-tests --path <project-name>
 ```
 
 Once you have created your template be sure to **change the service name from `hello` and update these changes in the `serverless.yml` configuration file**. Additionally, you will need to **change the `service` property** to a more appropriate name.
