@@ -20,6 +20,7 @@
     "@types/node": "^8.0.57",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
+    "serverless-dynamic-dotenv": "^1.0.2",    
     "serverless-offline": "^3.24.1",
     "serverless-webpack": "^4.0.0",
     "ts-loader": "^2.3.7",

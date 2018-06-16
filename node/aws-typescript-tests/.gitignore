@@ -60,6 +60,7 @@ typings/
 # dotenv environment variables file
 .env
 dev.env
+.env.*
 
 # Exclude tsc generated files
 js/*.map
