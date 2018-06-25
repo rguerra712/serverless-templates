@@ -1,5 +1,5 @@
 # Serverless Templates
-A list of servless templates for use with visual studio code.
+A list of serverless templates for use with visual studio code.
 
 # Example usage
 If you have not done so, you will need to install [serverless](https://github.com/serverless/serverless#readme) and setup your [provider credentials](https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/credentials.md).
