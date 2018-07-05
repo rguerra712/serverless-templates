@@ -69,3 +69,5 @@ lib/*.map
 lib/ts.js
 /**/*.js
 /out
+build/
+.build

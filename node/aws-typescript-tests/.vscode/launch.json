@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "node",
+            "request": "attach",
+            "name": "Attach by Process ID",
+            "processId": "${command:PickProcess}"
+        },
+        {
+            "type": "node",
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}/out/handler.js",
@@ -17,22 +23,15 @@
         },
         {
             "type": "node",
+            "name": "vscode-jest-tests",
             "request": "launch",
-            "name": "Mocha Tests",
-            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-            "args": [
-                "-u",
-                "tdd",
-                "--timeout",
-                "999999",
-                "--colors",
-                "${workspaceFolder}/out/test"
-            ],
-            "internalConsoleOptions": "openOnSessionStart",
-            "preLaunchTask": "npm: build",
-            "outFiles": [
-				"${workspaceRoot}/out/**/*.js"
-			]
+            "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+            "args": ["--runInBand"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "outFiles": ["${workspaceRoot}/out/**/*.js"],
+            "preLaunchTask": "npm: clear"
         }
     ]
 }
