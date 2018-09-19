@@ -8,20 +8,17 @@ provider:
   runtime: nodejs8.10
 
 plugins:
-  - serverless-plugin-typescript
-  - serverless-offline
   - serverless-dynamic-dotenv
-
-package:
-  include:
-    handler.ts
+  - serverless-offline
+  - serverless-plugin-typescript
+  - serverless-webpack
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/handler.hello
 
     events:
       - http:
           path: hello
-          method: post
+          method: get
 
