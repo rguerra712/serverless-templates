@@ -14,10 +14,10 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/out/handler.js",
+            "program": "${workspaceFolder}/build/handler.js",
             "preLaunchTask": "npm: build",
             "outFiles": [
-				"${workspaceRoot}/out/**/*.js"
+				"${workspaceRoot}/build/**/*.js"
 			],
             "envFile": "${workspaceFolder}/.env.dev"
         },
@@ -30,7 +30,7 @@
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
-            "outFiles": ["${workspaceRoot}/out/**/*.js"],
+            "outFiles": ["${workspaceRoot}/build/**/*.js"],
             "preLaunchTask": "npm: clear"
         }
     ]
