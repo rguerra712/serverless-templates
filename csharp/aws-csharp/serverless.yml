@@ -1,0 +1,16 @@
+service: aws-csharp
+
+provider:
+  name: aws
+  runtime: dotnetcore2.1
+
+plugins:
+  - serverless-dotnet
+
+functions:
+  hello:
+    handler: CsharpHandlers::AwsDotnetCsharp.Handler::Hello
+    events:
+      - http:
+          path: hello
+          method: get
